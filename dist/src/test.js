@@ -3,6 +3,7 @@ function greeter(person) {
     return "hello, " + person;
 }
 var user = 'yushare';
+//////////////////////////////////////////////////////////////////
 var v1;
 v1 = 12;
 v1 = 'ysy';
@@ -11,12 +12,15 @@ var v2;
 v2 = 22;
 v2 = [1, 2, 3];
 // v2[0] = 'name' // error: 对象的类型为 "unknown"。
+//////////////////////////////////////////////////////////////////
 var empty_arr = [];
+//////////////////////////////////////////////////////////////////
 var Person = /** @class */ (function () {
     function Person() {
     }
     return Person;
 }());
+//////////////////////////////////////////////////////////////////
 var Animal;
 (function (Animal) {
     Animal[Animal["Dog"] = 0] = "Dog";
@@ -27,3 +31,11 @@ var r = "red" /* Red */;
 var g = "green" /* 'Green' */;
 c = "blue" /* Blue */;
 var getUserName = function (user) { return user.name; };
+function CalculateAreas(config) {
+    var square = 100;
+    if (config.width) {
+        square = config.width * config.width;
+    }
+    return { area: square };
+}
+// let mySquare = CalculateAreas({ widdth: 5 });
