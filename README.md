@@ -1,2 +1,1 @@
-### typescript-advanced
-- typescript advanced
+#### [typescript](http://www.typescriptlang.org/) 进阶
